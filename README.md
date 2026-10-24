@@ -10,11 +10,11 @@ Systems-oriented developer and Computer Science undergraduate with a focus on lo
 
 ### About
 
-I engineer software at the intersection of systems, runtime optimization, and offline machine intelligence. My work centers on building practical, resource-conscious solutions—reducing external cloud dependencies in favor of efficient, local execution on consumer and edge hardware.
+I build software focused on systems, local machine learning setups, and embedded hardware, with an emphasis on keeping things lightweight and running without cloud dependencies.
 
-- **Focus:** Low-latency local AI inference, embedded sensor networks, and modular full-stack systems.
-- **Community:** Technical Coordinator for the IEEE Computer Society (GEC Idukki), mentoring students and leading technical workshops on Git workflows, microservices, and hardware interfacing.
-- **Education:** B.Tech in Computer Science and Engineering, Government Engineering College Idukki (2024–2028).
+- **Focus:** Local AI inference, embedded sensor networks, and practical full-stack tools.
+- **Community:** Technical Coordinator for the IEEE Computer Society (GEC Idukki), helping organize practical sessions on Git and web basics for students.
+- **Education:** B.Tech in Computer Science and Engineering, Government Engineering College Idukki (2024 to 2028).
 
 ---
 
@@ -77,12 +77,12 @@ I engineer software at the intersection of systems, runtime optimization, and of
 - Structured relational schemas with indexed date and multi-category queries, delivering consistent sub-100ms response latencies.
 - Implemented automated CI/CD container build and regression testing pipelines with GitHub Actions.
 
----
+### Community & Activities
 
-### Technical Leadership & Community
-
-- **Technical Coordinator — IEEE Computer Society, GEC Idukki (2024–Present):** Directed technical training and conducted hands-on workshops on Git Flow & Collaborative Engineering, REST API Design with Spring Boot, Embedded Systems Interfacing, and Docker Containerization.
-- **Peer Code Reviews:** Instated structured review circles for undergraduate engineering teams, fostering clean code practices and branch hygiene.
+- **Technical Coordinator, IEEE Computer Society (GEC Idukki):**
+  - Helped organize practical sessions for club members on basic Git, web development, and project setups.
+  - Assisted juniors and batchmates with debugging, tool installations, and getting started on their coursework projects.
+  - Helped manage technical events, hackathon entries, and project presentations for the chapter.
 
 ---
 
