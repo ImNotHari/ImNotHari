@@ -7,6 +7,16 @@
   .line-success { opacity: 0; animation: show-success 2.25s linear forwards; }
   .line-streak { opacity: 0; animation: show-streak 2.25s linear forwards; }
   .line-bottom { opacity: 0; animation: show-bottom 2.25s linear forwards; }
+  .streak-ring {
+    stroke-dasharray: 238.76;
+    stroke-dashoffset: 238.76;
+    animation: draw-ring 2.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .streak-flame {
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: flame-pulse 2.2s ease-in-out 1.9s infinite;
+  }
   .cursor {
     opacity: 1;
     visibility: hidden;
@@ -20,6 +30,8 @@
   @keyframes show-success { 0%, 79.5556% { opacity: 0; } 80.0000%, 100% { opacity: 1; } }
   @keyframes show-streak { 0%, 84.0000% { opacity: 0; } 84.4444%, 100% { opacity: 1; } }
   @keyframes show-bottom { 0%, 99.5556% { opacity: 0; } 100.0000%, 100% { opacity: 1; } }
+  @keyframes draw-ring { 0%, 84.4444% { stroke-dashoffset: 238.76; } 100.0000%, 100% { stroke-dashoffset: 0; } }
+  @keyframes flame-pulse { 0%, 100% { transform: scale(1); opacity: 0.95; } 50% { transform: scale(1.1); opacity: 1; } }
   @keyframes cursor-window { 0%, 99.5556% { visibility: hidden; } 100.0000%, 100% { visibility: visible; } }
   @keyframes typing-cursor-window { 0%, 48.8889% { opacity: 1; } 49.3333%, 100% { opacity: 0; } }
   @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
@@ -65,12 +77,12 @@
 <line x1="184" y1="160" x2="184" y2="308" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 <line x1="397.33333333333337" y1="166" x2="397.33333333333337" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 <line x1="610.6666666666667" y1="166" x2="610.6666666666667" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-<text x="290.6666666666667" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">188</text>
+<text x="290.6666666666667" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">190</text>
 <text x="290.6666666666667" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#c9d1d9" font-weight="500" text-anchor="middle">Total Contributions</text>
 <text x="290.6666666666667" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">Jan 1, 2024 - Dec 31, 2026</text>
-<circle cx="504" cy="214" r="38" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5"/>
+<circle class="streak-ring" cx="504" cy="214" r="38" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5" transform="rotate(-90 504 214)"/>
 <circle cx="504" cy="177" r="11" fill="#151b23"/>
-<path d="M504,161 C509.4,169.4 512.4,177.8 510,185 C504,188.6 498,185 495.6,177.8 C498.6,169.4 504,161 504,161 Z" fill="url(#streakRingGrad)"/>
+<path class="streak-flame" d="M504,161 C509.4,169.4 512.4,177.8 510,185 C504,188.6 498,185 495.6,177.8 C498.6,169.4 504,161 504,161 Z" fill="url(#streakRingGrad)"/>
 <text x="504" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">0</text>
 <text x="504" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="600" text-anchor="middle">Current Streak</text>
 <text x="504" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">No active streak</text>

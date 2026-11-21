@@ -129,14 +129,28 @@ function addTextSpans(parts, startX, y, fontSize = 16) {
   return `<text x="${startX}" y="${y}" font-size="${fontSize}" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="${promptPartsWidth(parts, fontSize)}" lengthAdjust="spacingAndGlyphs">${spans.join("")}</text>`;
 }
 
-function createAnimationCss(timeline) {
+function createAnimationCss(timeline, ringRadius = 38) {
   const pct = (seconds) => ((seconds / timeline.cycleDuration) * 100).toFixed(4);
+
+  const ringCircumference = (2 * Math.PI * ringRadius).toFixed(2);
+  const ringDrawStart = pct(timeline.streakAt);
+  const ringDrawEnd = pct(Math.min(timeline.cycleDuration, timeline.streakAt + 0.55));
 
   return `
   .line-fetch { opacity: 0; animation: show-fetch ${timeline.cycleDuration}s linear forwards; }
   .line-success { opacity: 0; animation: show-success ${timeline.cycleDuration}s linear forwards; }
   .line-streak { opacity: 0; animation: show-streak ${timeline.cycleDuration}s linear forwards; }
   .line-bottom { opacity: 0; animation: show-bottom ${timeline.cycleDuration}s linear forwards; }
+  .streak-ring {
+    stroke-dasharray: ${ringCircumference};
+    stroke-dashoffset: ${ringCircumference};
+    animation: draw-ring ${timeline.cycleDuration}s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .streak-flame {
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: flame-pulse 2.2s ease-in-out ${timeline.streakAt}s infinite;
+  }
   .cursor {
     opacity: 1;
     visibility: hidden;
@@ -150,6 +164,8 @@ function createAnimationCss(timeline) {
   @keyframes show-success { 0%, ${pct(Math.max(0, timeline.successAt - 0.01))}% { opacity: 0; } ${pct(timeline.successAt)}%, 100% { opacity: 1; } }
   @keyframes show-streak { 0%, ${pct(Math.max(0, timeline.streakAt - 0.01))}% { opacity: 0; } ${pct(timeline.streakAt)}%, 100% { opacity: 1; } }
   @keyframes show-bottom { 0%, ${pct(Math.max(0, timeline.bottomAt - 0.01))}% { opacity: 0; } ${pct(timeline.bottomAt)}%, 100% { opacity: 1; } }
+  @keyframes draw-ring { 0%, ${ringDrawStart}% { stroke-dashoffset: ${ringCircumference}; } ${ringDrawEnd}%, 100% { stroke-dashoffset: 0; } }
+  @keyframes flame-pulse { 0%, 100% { transform: scale(1); opacity: 0.95; } 50% { transform: scale(1.1); opacity: 1; } }
   @keyframes cursor-window { 0%, ${pct(Math.max(0, timeline.bottomAt - 0.01))}% { visibility: hidden; } ${pct(timeline.bottomAt)}%, 100% { visibility: visible; } }
   @keyframes typing-cursor-window { 0%, ${pct(timeline.typingDuration)}% { opacity: 1; } ${pct(Math.min(timeline.cycleDuration, timeline.typingDuration + 0.01))}%, 100% { opacity: 0; } }
   @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
@@ -488,7 +504,7 @@ export async function generateStreakSvg(themeName, githubId, options = {}) {
   svg.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${outputWidth}" height="${outputHeight}" viewBox="0 0 ${width} ${height}" role="img" aria-label="GitHub streak card for ${escapeXml(githubId)}">`);
   svg.push(`<title>${escapeXml(theme.title(githubId))}</title>`);
   svg.push(`<defs>`);
-  svg.push(`<style>${createAnimationCss(timeline)}${REDUCED_MOTION_CSS}</style>`);
+  svg.push(`<style>${createAnimationCss(timeline, ringRadius)}${REDUCED_MOTION_CSS}</style>`);
   svg.push(`<linearGradient id="streakRingGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#39d2c0"/></linearGradient>`);
   svg.push(`<clipPath id="${commandClipId}"><rect x="${commandX}" y="${promptY - 16}" width="0" height="22"><animate attributeName="width" values="0;${commandW + 6};${commandW + 6}" keyTimes="0;${timeline.typingRatio};1" dur="${timeline.cycleDuration}s" fill="freeze" /></rect></clipPath>`);
   svg.push(`<clipPath id="${fetchClipId}"><rect x="${promptStartX}" y="${fetchLineY - 16}" width="0" height="20"><animate attributeName="width" values="0;0;${fetchWidth + 6};${fetchWidth + 6}" keyTimes="0;${timeline.fetchStartRatio};${timeline.fetchEndRatio};1" dur="${timeline.cycleDuration}s" fill="freeze" /></rect></clipPath>`);
@@ -537,9 +553,9 @@ export async function generateStreakSvg(themeName, githubId, options = {}) {
   svg.push(`<text x="${col0X}" y="${rangeY}" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="${dateColor}" text-anchor="middle">${escapeXml(formatRange(streakData.totalRange))}</text>`);
 
   // Column 2: Current Streak (Blue-to-Cyan Gradient Ring + Centered Flame)
-  svg.push(`<circle cx="${col1X}" cy="${ringCenterY}" r="${ringRadius}" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5"/>`);
+  svg.push(`<circle class="streak-ring" cx="${col1X}" cy="${ringCenterY}" r="${ringRadius}" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5" transform="rotate(-90 ${col1X} ${ringCenterY})"/>`);
   svg.push(`<circle cx="${col1X}" cy="${flameCenterY}" r="11" fill="#151b23"/>`);
-  svg.push(`<path d="${flamePath(col1X, flameCenterY + 2, 1.2)}" fill="url(#streakRingGrad)"/>`);
+  svg.push(`<path class="streak-flame" d="${flamePath(col1X, flameCenterY + 2, 1.2)}" fill="url(#streakRingGrad)"/>`);
   svg.push(`<text x="${col1X}" y="${numberY}" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="${valueColor}" font-weight="700" text-anchor="middle">${formatNumber(streakData.currentStreak)}</text>`);
   svg.push(`<text x="${col1X}" y="${labelY}" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="${valueColor}" font-weight="600" text-anchor="middle">Current Streak</text>`);
   svg.push(`<text x="${col1X}" y="${rangeY}" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="${dateColor}" text-anchor="middle">${escapeXml(formatRange(streakData.currentRange))}</text>`);
