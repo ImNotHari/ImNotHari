@@ -3,7 +3,7 @@
 # Harishankar Suresh
 
 <a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=17&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Systems+%26+Edge+AI+Engineer+%C2%B7+GEC+Idukki+(2024%E2%80%932028);Multimodal+Deep+Learning+%C2%B7+Geospatial+Early+Warning;Low-Latency+Local+Inference+%C2%B7+Distributed+Embedded+IoT" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Source+Code+Pro&weight=500&size=17&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Systems+%26+Edge+AI+Engineer+%C2%B7+GEC+Idukki+(2024%E2%80%932028);Multimodal+Deep+Learning+%C2%B7+Geospatial+Early+Warning;Low-Latency+Local+Inference+%C2%B7+Distributed+Embedded+IoT" alt="Typing SVG" />
 </a>
 
 <p>
