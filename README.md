@@ -3,10 +3,10 @@
 # Harishankar Suresh
 
 <a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Source+Code+Pro&weight=500&size=16&duration=3000&pause=1000&color=C9D1D9&center=true&vCenter=true&width=640&lines=Systems+%26+Edge+AI+Engineer+%C2%B7+GEC+Idukki+(2024%E2%80%932028);Multimodal+Deep+Learning+%C2%B7+Geospatial+Early+Warning;Low-Latency+Local+Inference+%C2%B7+Distributed+Embedded+IoT" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Source+Code+Pro&weight=500&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Systems+%26+Edge+AI+Engineer+%C2%B7+GEC+Idukki+(2024%E2%80%932028);Multimodal+Deep+Learning+%C2%B7+Geospatial+Early+Warning;Low-Latency+Local+Inference+%C2%B7+Distributed+Embedded+IoT" alt="Typing SVG" />
 </a>
 
-<p><a href="https://www.linkedin.com/in/harishankar-suresh-2aa657201/"><img src="https://img.shields.io/badge/LinkedIn-harishankar--suresh-161b22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:harishankar.suresh@gmail.com"><img src="https://img.shields.io/badge/Email-harishankar.suresh%40gmail.com-161b22?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a> <a href="https://github.com/ImNotHari"><img src="https://img.shields.io/badge/GitHub-ImNotHari-161b22?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a></p>
+<p><a href="https://www.linkedin.com/in/harishankar-suresh-2aa657201/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:harishankar.suresh@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a> <a href="https://github.com/ImNotHari"><img src="https://img.shields.io/badge/GitHub-30363d?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a></p>
 
 </div>
 
@@ -38,12 +38,12 @@ Computer Science & Engineering undergraduate (**GEC Idukki**, 2024–2028) focus
     <tr>
       <td align="center" valign="middle" width="420">
         <a href="https://github.com/ImNotHari">
-          <img height="195" src="https://github-readme-stats.vercel.app/api?username=ImNotHari&show_icons=true&bg_color=151b23&border_color=262d36&border_radius=12&title_color=ffffff&icon_color=c9d1d9&text_color=c9d1d9&ring_color=e6edf3&line_height=28&card_width=420" alt="Harishankar's GitHub Stats" />
+          <img height="195" src="https://github-readme-stats.vercel.app/api?username=ImNotHari&show_icons=true&bg_color=151b23&border_color=262d36&border_radius=12&title_color=ffffff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff&line_height=28&card_width=420" alt="Harishankar's GitHub Stats" />
         </a>
       </td>
       <td align="center" valign="middle" width="420">
         <a href="https://github.com/ImNotHari">
-          <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ImNotHari&layout=compact&langs_count=6&theme=graywhite&bg_color=151b23&border_color=262d36&border_radius=12&title_color=ffffff&text_color=c9d1d9&card_width=420" alt="Top Languages" />
+          <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ImNotHari&layout=compact&langs_count=6&bg_color=151b23&border_color=262d36&border_radius=12&title_color=ffffff&text_color=c9d1d9&card_width=420" alt="Top Languages" />
         </a>
       </td>
     </tr>
@@ -64,20 +64,20 @@ Computer Science & Engineering undergraduate (**GEC Idukki**, 2024–2028) focus
 ### Engineering Arsenal
 
 <p align="left">
-  <img src="https://img.shields.io/badge/C-161b22?style=flat-square&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/PyTorch-161b22?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/ONNX_Runtime-161b22?style=flat-square&logo=onnx&logoColor=white" alt="ONNX Runtime" />
-  <img src="https://img.shields.io/badge/FastAPI-161b22?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Spring_Boot-161b22?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/Streamlit-161b22?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Docker-161b22?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Linux-161b22?style=flat-square&logo=linux&logoColor=white" alt="Linux" />
-  <img src="https://img.shields.io/badge/MQTT-161b22?style=flat-square&logo=eclipsemosquitto&logoColor=white" alt="MQTT" />
-  <img src="https://img.shields.io/badge/Electron-161b22?style=flat-square&logo=electron&logoColor=white" alt="Electron" />
+  <img src="https://img.shields.io/badge/C-161b22?style=flat-square&logo=c" alt="C" />
+  <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python" alt="Python" />
+  <img src="https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=f89820" alt="Java" />
+  <img src="https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/PyTorch-161b22?style=flat-square&logo=pytorch" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/ONNX_Runtime-161b22?style=flat-square&logo=onnx" alt="ONNX Runtime" />
+  <img src="https://img.shields.io/badge/FastAPI-161b22?style=flat-square&logo=fastapi" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Spring_Boot-161b22?style=flat-square&logo=springboot" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Streamlit-161b22?style=flat-square&logo=streamlit" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-161b22?style=flat-square&logo=docker" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-161b22?style=flat-square&logo=linux" alt="Linux" />
+  <img src="https://img.shields.io/badge/MQTT-161b22?style=flat-square&logo=eclipsemosquitto" alt="MQTT" />
+  <img src="https://img.shields.io/badge/Electron-161b22?style=flat-square&logo=electron" alt="Electron" />
 </p>
 
 | Domain                  | Stack & Capabilities                                                                                                         |
