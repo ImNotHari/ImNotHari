@@ -20,20 +20,22 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Generate streak SVG
+      - name: Generate streak & repo cards SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
-        run: node scripts/generate-streak.mjs "$GITHUB_USERNAME" ubuntu assets/streak.svg
+        run: |
+          node scripts/generate-streak.mjs "$GITHUB_USERNAME" ubuntu assets/streak.svg
+          node scripts/generate-repo-cards.mjs "$GITHUB_USERNAME"
 
-      - name: Commit updated streak SVG
+      - name: Commit updated telemetry SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/streak.svg
+          git add assets/*.svg
           if git diff --cached --quiet; then
-            echo "No changes to streak.svg"
+            echo "No changes to telemetry SVGs"
           else
-            git commit -m "chore: update streak telemetry SVG"
+            git commit -m "chore: update streak & repo telemetry SVGs"
             git push
           fi
