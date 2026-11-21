@@ -90,33 +90,16 @@ Computer Science & Engineering undergraduate (**GEC Idukki**, 2024–2028) focus
 ---
 
 
-### Featured Systems
+### Projects
 
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%" align="center">
-        <a href="https://github.com/ImNotHari/Earthsense"><img src="./assets/repo-earthsense.svg" alt="EarthSense" /></a>
-      </td>
-      <td width="50%" align="center">
-        <a href="https://github.com/ImNotHari/gomosy"><img src="./assets/repo-gomosy.svg" alt="Gomosy" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" align="center">
-        <a href="https://github.com/ImNotHari/TRACE"><img src="./assets/repo-trace.svg" alt="TRACE" /></a>
-      </td>
-      <td width="50%" align="center">
-        <a href="https://github.com/ImNotHari/expensetracker"><img src="./assets/repo-expensetracker.svg" alt="Expense Tracker" /></a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-| Additional Systems | Domain | Core Stack | Highlight |
+| Project | Domain | Stack | Key Result |
 | :--- | :--- | :--- | :--- |
+| [**EarthSense**](https://github.com/ImNotHari/Earthsense) | Multimodal Landslide EWS | PyTorch, XGBoost, SAR, FastAPI, Streamlit | `0.9581` PR-AUC · `49.45 ms` p95 |
+| [**Gomosy**](https://github.com/ImNotHari/gomosy) | Offline PDF-to-Speech AI | Python, Electron, ONNX, llama.cpp | `<= 1.0 GB` RAM · `<= 2.5 GB` VRAM |
+| [**TRACE**](https://github.com/ImNotHari/TRACE) | LEO Orbital Decay Sim | JavaScript, Physics Modeling, Chart.js | **NASA Space Apps Global Nominee** |
+| [**Expense Tracker**](https://github.com/ImNotHari/expensetracker) | Full-Stack Finance SPA | Spring Boot, PostgreSQL, Docker, Vue.js | `< 100 ms` indexed queries |
 | **DAPS** | Embedded IoT Network | C, MQTT, I2C/SPI, Sensor Fusion | `~15%` power reduction |
-| **RISC-V Predictor** | Microarchitecture Sim | QtRvSim, RISC-V ASM, Python | 5-stage pipeline CPI analysis |
+| **RISC-V Predictor** | Microarchitecture Sim | QtRvSim, RISC-V Assembly, Python | 5-stage pipeline CPI analysis |
 
 <details>
 <summary><strong>Architectural Deep-Dives (Click to expand)</strong></summary>
