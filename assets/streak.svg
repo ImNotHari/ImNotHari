@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="856" height="388" viewBox="0 0 856 388" role="img" aria-label="GitHub streak card for ImNotHari">
+<title>ImNotHari — zsh — 80×24</title>
+<defs>
+<style>
+  .line-fetch { opacity: 0; animation: show-fetch 2.25s linear forwards; }
+  .line-success { opacity: 0; animation: show-success 2.25s linear forwards; }
+  .line-streak { opacity: 0; animation: show-streak 2.25s linear forwards; }
+  .line-bottom { opacity: 0; animation: show-bottom 2.25s linear forwards; }
+  .cursor {
+    opacity: 1;
+    visibility: hidden;
+    animation: cursor-window 2.25s steps(1, end) forwards, blink 0.8s steps(1,end) infinite;
+  }
+  .typing-cursor {
+    opacity: 1;
+    animation: typing-cursor-window 2.25s steps(1, end) forwards;
+  }
+  @keyframes show-fetch { 0%, 48.4444% { opacity: 0; } 48.8889%, 100% { opacity: 1; } }
+  @keyframes show-success { 0%, 79.5556% { opacity: 0; } 80.0000%, 100% { opacity: 1; } }
+  @keyframes show-streak { 0%, 84.0000% { opacity: 0; } 84.4444%, 100% { opacity: 1; } }
+  @keyframes show-bottom { 0%, 99.5556% { opacity: 0; } 100.0000%, 100% { opacity: 1; } }
+  @keyframes cursor-window { 0%, 99.5556% { visibility: hidden; } 100.0000%, 100% { visibility: visible; } }
+  @keyframes typing-cursor-window { 0%, 48.8889% { opacity: 1; } 49.3333%, 100% { opacity: 0; } }
+  @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .line-fetch, .line-success, .line-streak, .line-bottom { opacity: 1 !important; animation: none !important; }
+    .typing-cursor { opacity: 0 !important; animation: none !important; }
+    .cursor { visibility: visible !important; animation: none !important; }
+    clipPath rect { width: 9999px !important; }
+  }
+</style>
+<linearGradient id="streakRingGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#39d2c0"/></linearGradient>
+<clipPath id="streak-command-typing-clip"><rect x="219.8" y="62" width="0" height="22"><animate attributeName="width" values="0;182.70000000000002;182.70000000000002" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></rect></clipPath>
+<clipPath id="streak-fetch-typing-clip"><rect x="32" y="84" width="0" height="20"><animate attributeName="width" values="0;0;368.70000000000005;368.70000000000005" keyTimes="0;0.488889;0.800000;1" dur="2.25s" fill="freeze" /></rect></clipPath>
+</defs>
+<rect x="12" y="12" width="832" height="364" rx="12" fill="#151b23" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<rect x="13" y="50" width="830" height="314" rx="0" fill="#0d1117"/>
+<rect x="13" y="13" width="830" height="38" rx="11" fill="#151b23"/>
+<line x1="12" y1="50" x2="844" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+      <circle cx="30" cy="31" r="5.5" fill="#ff5f56"/>
+      <circle cx="48" cy="31" r="5.5" fill="#ffbd2e"/>
+      <circle cx="66" cy="31" r="5.5" fill="#27c93f"/>
+    
+<text x="428" y="36" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#8b949e" text-anchor="middle">ImNotHari — zsh — 80×24</text>
+<text x="32" y="78" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="184.8" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@MacBook</tspan><tspan fill="#58a6ff"> ~ </tspan><tspan fill="#e6edf3">% </tspan></text>
+<text x="219.8" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" clip-path="url(#streak-command-typing-clip)">gh streak ImNotHari</text>
+<text class="typing-cursor" x="219.8" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█<animate attributeName="x" values="219.8;398.5;398.5" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></text>
+<g class="line-fetch">
+<text x="32" y="100" fill="#8b949e" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" clip-path="url(#streak-fetch-typing-clip)">Calculating streak from GitHub GraphQL API...</text>
+</g>
+<g class="line-success">
+<text x="32" y="120" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace"><tspan fill="#3fb950">✔ </tspan><tspan fill="#e6edf3">Success! Generated GitHub streak for &#39;ImNotHari&#39;.</tspan></text>
+</g>
+<g class="line-streak">
+<rect x="32" y="142" width="792" height="184" rx="12" fill="#151b23" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="108" y="204" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#58a6ff" text-anchor="middle" letter-spacing="2">░▒▓█▓▒░</text>
+<text x="108" y="226" font-size="18" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="1">GITHUB</text>
+<text x="108" y="248" font-size="18" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#58a6ff" font-weight="700" text-anchor="middle" letter-spacing="1">STREAK</text>
+<text x="108" y="268" font-size="11" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#8b949e" text-anchor="middle">@ImNotHari</text>
+<line x1="184" y1="160" x2="184" y2="308" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<line x1="397.33333333333337" y1="166" x2="397.33333333333337" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<line x1="610.6666666666667" y1="166" x2="610.6666666666667" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="290.6666666666667" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">187</text>
+<text x="290.6666666666667" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#c9d1d9" font-weight="500" text-anchor="middle">Total Contributions</text>
+<text x="290.6666666666667" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">Jan 1, 2024 - Dec 31, 2026</text>
+<circle cx="504" cy="214" r="38" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5"/>
+<circle cx="504" cy="177" r="11" fill="#151b23"/>
+<path d="M504,161 C509.4,169.4 512.4,177.8 510,185 C504,188.6 498,185 495.6,177.8 C498.6,169.4 504,161 504,161 Z" fill="url(#streakRingGrad)"/>
+<text x="504" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">0</text>
+<text x="504" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="600" text-anchor="middle">Current Streak</text>
+<text x="504" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">No active streak</text>
+<text x="717.3333333333334" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">4</text>
+<text x="717.3333333333334" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#c9d1d9" font-weight="500" text-anchor="middle">Longest Streak</text>
+<text x="717.3333333333334" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">Jun 21, 2026 - Jun 24, 2026</text>
+</g>
+<g class="line-bottom">
+<text x="32" y="354" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="184.8" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@MacBook</tspan><tspan fill="#58a6ff"> ~ </tspan><tspan fill="#e6edf3">% </tspan></text>
+<text class="cursor" x="216.8" y="354" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█</text>
+</g>
+</svg>
