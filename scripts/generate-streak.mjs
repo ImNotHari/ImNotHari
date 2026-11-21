@@ -77,21 +77,21 @@ const THEMES = {
     controlsSvg: (x, y) => `
       <line x1="${x}" y1="${y}" x2="${x + 10}" y2="${y}" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round"/>
       <rect x="${x + 20}" y="${y - 4.5}" width="9" height="9" rx="1" fill="none" stroke="#8b949e" stroke-width="1.3"/>
-      <circle cx="${x + 45}" cy="${y}" r="8" fill="#e95420"/>
-      <line x1="${x + 42}" y1="${y - 3}" x2="${x + 48}" y2="${y + 3}" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
-      <line x1="${x + 48}" y1="${y - 3}" x2="${x + 42}" y2="${y + 3}" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="${x + 45}" cy="${y}" r="8" fill="#30363d"/>
+      <line x1="${x + 42}" y1="${y - 3}" x2="${x + 48}" y2="${y + 3}" stroke="#e6edf3" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="${x + 48}" y1="${y - 3}" x2="${x + 42}" y2="${y + 3}" stroke="#e6edf3" stroke-width="1.4" stroke-linecap="round"/>
     `,
     palette: {
       fg: "#e6edf3",
       mute: "#8b949e",
       border: "rgba(255,255,255,0.08)",
-      accent: "#58a6ff",
-      green: "#3fb950",
-      blue: "#58a6ff",
-      cyan: "#39d2c0",
-      yellow: "#d29922",
-      purple: "#bc8cff",
-      orange: "#58a6ff",
+      accent: "#e6edf3",
+      green: "#c9d1d9",
+      blue: "#c9d1d9",
+      cyan: "#8b949e",
+      yellow: "#c9d1d9",
+      purple: "#c9d1d9",
+      orange: "#e6edf3",
     },
   },
 };
@@ -505,7 +505,7 @@ export async function generateStreakSvg(themeName, githubId, options = {}) {
   svg.push(`<title>${escapeXml(theme.title(githubId))}</title>`);
   svg.push(`<defs>`);
   svg.push(`<style>${createAnimationCss(timeline, ringRadius)}${REDUCED_MOTION_CSS}</style>`);
-  svg.push(`<linearGradient id="streakRingGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#39d2c0"/></linearGradient>`);
+  svg.push(`<linearGradient id="streakRingGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#6e7681"/></linearGradient>`);
   svg.push(`<clipPath id="${commandClipId}"><rect x="${commandX}" y="${promptY - 16}" width="0" height="22"><animate attributeName="width" values="0;${commandW + 6};${commandW + 6}" keyTimes="0;${timeline.typingRatio};1" dur="${timeline.cycleDuration}s" fill="freeze" /></rect></clipPath>`);
   svg.push(`<clipPath id="${fetchClipId}"><rect x="${promptStartX}" y="${fetchLineY - 16}" width="0" height="20"><animate attributeName="width" values="0;0;${fetchWidth + 6};${fetchWidth + 6}" keyTimes="0;${timeline.fetchStartRatio};${timeline.fetchEndRatio};1" dur="${timeline.cycleDuration}s" fill="freeze" /></rect></clipPath>`);
   svg.push(`</defs>`);
