@@ -24,7 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
-        run: node scripts/generate-streak.mjs "$GITHUB_USERNAME" mac assets/streak.svg
+        run: node scripts/generate-streak.mjs "$GITHUB_USERNAME" ubuntu assets/streak.svg
 
       - name: Commit updated streak SVG
         run: |

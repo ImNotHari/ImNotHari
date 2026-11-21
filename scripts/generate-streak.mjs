@@ -75,9 +75,11 @@ const THEMES = {
     text: "#e6edf3",
     title: (id) => `${id}@ubuntu: ~`,
     controlsSvg: (x, y) => `
-      <circle cx="${x}" cy="${y}" r="5.5" fill="#e95420"/>
-      <circle cx="${x + 18}" cy="${y}" r="5.5" fill="#77216f"/>
-      <circle cx="${x + 36}" cy="${y}" r="5.5" fill="#8b949e"/>
+      <line x1="${x}" y1="${y}" x2="${x + 10}" y2="${y}" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round"/>
+      <rect x="${x + 20}" y="${y - 4.5}" width="9" height="9" rx="1" fill="none" stroke="#8b949e" stroke-width="1.3"/>
+      <circle cx="${x + 45}" cy="${y}" r="8" fill="#e95420"/>
+      <line x1="${x + 42}" y1="${y - 3}" x2="${x + 48}" y2="${y + 3}" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="${x + 48}" y1="${y - 3}" x2="${x + 42}" y2="${y + 3}" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
     `,
     palette: {
       fg: "#e6edf3",
@@ -562,7 +564,7 @@ export async function generateStreakSvg(themeName, githubId, options = {}) {
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === __filename;
 if (isMain) {
   const githubId = process.env.GITHUB_USERNAME || process.argv[2] || "ImNotHari";
-  const themeName = process.env.STREAK_THEME || process.argv[3] || "mac";
+  const themeName = process.env.STREAK_THEME || process.argv[3] || "ubuntu";
   const outPath = process.argv[4] || path.resolve(__dirname, "..", "assets", "streak.svg");
 
   const svgContent = await generateStreakSvg(themeName, githubId);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="856" height="388" viewBox="0 0 856 388" role="img" aria-label="GitHub streak card for ImNotHari">
-<title>ImNotHari — zsh — 80×24</title>
+<title>ImNotHari@ubuntu: ~</title>
 <defs>
 <style>
   .line-fetch { opacity: 0; animation: show-fetch 2.25s linear forwards; }
@@ -32,7 +32,7 @@
   }
 </style>
 <linearGradient id="streakRingGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#39d2c0"/></linearGradient>
-<clipPath id="streak-command-typing-clip"><rect x="219.8" y="62" width="0" height="22"><animate attributeName="width" values="0;182.70000000000002;182.70000000000002" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></rect></clipPath>
+<clipPath id="streak-command-typing-clip"><rect x="203.00000000000003" y="62" width="0" height="22"><animate attributeName="width" values="0;229.20000000000002;229.20000000000002" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></rect></clipPath>
 <clipPath id="streak-fetch-typing-clip"><rect x="32" y="84" width="0" height="20"><animate attributeName="width" values="0;0;368.70000000000005;368.70000000000005" keyTimes="0;0.488889;0.800000;1" dur="2.25s" fill="freeze" /></rect></clipPath>
 </defs>
 <rect x="12" y="12" width="832" height="364" rx="12" fill="#151b23" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
@@ -40,14 +40,16 @@
 <rect x="13" y="13" width="830" height="38" rx="11" fill="#151b23"/>
 <line x1="12" y1="50" x2="844" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
-      <circle cx="30" cy="31" r="5.5" fill="#ff5f56"/>
-      <circle cx="48" cy="31" r="5.5" fill="#ffbd2e"/>
-      <circle cx="66" cy="31" r="5.5" fill="#27c93f"/>
+      <line x1="782" y1="31" x2="792" y2="31" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round"/>
+      <rect x="802" y="26.5" width="9" height="9" rx="1" fill="none" stroke="#8b949e" stroke-width="1.3"/>
+      <circle cx="827" cy="31" r="8" fill="#e95420"/>
+      <line x1="824" y1="28" x2="830" y2="34" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="830" y1="28" x2="824" y2="34" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
     
-<text x="428" y="36" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#8b949e" text-anchor="middle">ImNotHari — zsh — 80×24</text>
-<text x="32" y="78" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="184.8" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@MacBook</tspan><tspan fill="#58a6ff"> ~ </tspan><tspan fill="#e6edf3">% </tspan></text>
-<text x="219.8" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" clip-path="url(#streak-command-typing-clip)">gh streak ImNotHari</text>
-<text class="typing-cursor" x="219.8" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█<animate attributeName="x" values="219.8;398.5;398.5" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></text>
+<text x="428" y="36" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" fill="#8b949e" text-anchor="middle">ImNotHari@ubuntu: ~</text>
+<text x="32" y="78" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="168.00000000000003" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@ubuntu</tspan><tspan fill="#e6edf3">:~</tspan><tspan fill="#e6edf3">$ </tspan></text>
+<text x="203.00000000000003" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" clip-path="url(#streak-command-typing-clip)">gh streak view ImNotHari</text>
+<text class="typing-cursor" x="203.00000000000003" y="78" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█<animate attributeName="x" values="203.00000000000003;428.20000000000005;428.20000000000005" keyTimes="0;0.488889;1" dur="2.25s" fill="freeze" /></text>
 <g class="line-fetch">
 <text x="32" y="100" fill="#8b949e" font-size="13" font-family="'Source Code Pro', Consolas, Menlo, monospace" clip-path="url(#streak-fetch-typing-clip)">Calculating streak from GitHub GraphQL API...</text>
 </g>
@@ -63,7 +65,7 @@
 <line x1="184" y1="160" x2="184" y2="308" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 <line x1="397.33333333333337" y1="166" x2="397.33333333333337" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 <line x1="610.6666666666667" y1="166" x2="610.6666666666667" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-<text x="290.6666666666667" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">187</text>
+<text x="290.6666666666667" y="224" font-size="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700" text-anchor="middle">188</text>
 <text x="290.6666666666667" y="276" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#c9d1d9" font-weight="500" text-anchor="middle">Total Contributions</text>
 <text x="290.6666666666667" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">Jan 1, 2024 - Dec 31, 2026</text>
 <circle cx="504" cy="214" r="38" fill="none" stroke="url(#streakRingGrad)" stroke-width="3.5"/>
@@ -77,7 +79,7 @@
 <text x="717.3333333333334" y="294" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#8b949e" text-anchor="middle">Jun 21, 2026 - Jun 24, 2026</text>
 </g>
 <g class="line-bottom">
-<text x="32" y="354" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="184.8" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@MacBook</tspan><tspan fill="#58a6ff"> ~ </tspan><tspan fill="#e6edf3">% </tspan></text>
-<text class="cursor" x="216.8" y="354" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█</text>
+<text x="32" y="354" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace" xml:space="preserve" textLength="168.00000000000003" lengthAdjust="spacingAndGlyphs"><tspan fill="#3fb950">ImNotHari@ubuntu</tspan><tspan fill="#e6edf3">:~</tspan><tspan fill="#e6edf3">$ </tspan></text>
+<text class="cursor" x="200.00000000000003" y="354" fill="#e6edf3" font-size="15" font-family="'Source Code Pro', Consolas, Menlo, monospace">█</text>
 </g>
 </svg>
